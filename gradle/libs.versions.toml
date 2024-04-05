@@ -1,0 +1,28 @@
+[versions]
+jvmTarget = "1.8"
+android-compileSdk = "34"
+android-minSdk = "24"
+android-targetSdk = "34"
+agp = "8.3.1"
+
+coroutines = "1.8.0"
+kotlin = "1.9.22"
+junit = "4.13.2"
+mockk = "1.13.9"
+mockk-common = "1.12.5"
+turbine = "1.1.0"
+
+[libraries]
+coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+mockk-common = { group = "io.mockk", name = "mockk-common", version.ref = "mockk-common" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
