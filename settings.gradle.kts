@@ -19,3 +19,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "kmp-mvi"
 include(":mvi")
+include(":sample")
